@@ -1,0 +1,13 @@
+<?php
+mysql_connect('localhost','root','');
+$query=mysql_query('create database new');
+$qu=mysql_query('use new');
+if($query)
+ {
+   echo'Database is created';
+ }
+  else
+ {
+   echo'Database is not created';
+  }
+?>
